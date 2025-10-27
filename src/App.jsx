@@ -104,7 +104,7 @@ const App = () => {
                             <span className="sr-only">Your Company</span>
                             <img
                                 alt=""
-                                src="/Logo.png"
+                                src={`${import.meta.env.BASE_URL}Logo.png`}
                                 className="h-8 w-auto"
                             />
                         </a>
@@ -137,7 +137,7 @@ const App = () => {
                                 <span className="sr-only">Your Company</span>
                                 <img
                                     alt=""
-                                    src="/Logo.png"
+                                    src={`${import.meta.env.BASE_URL}Logo.png`}
                                     className="h-8 w-auto"
                                 />
                             </a>
@@ -400,7 +400,7 @@ const App = () => {
             <footer className="bg-white lg:grid lg:grid-cols-5">
                 <div id="contact" className="relative block h-32 px-4 lg:col-span-2 lg:h-full flex justify-center items-end mt-4 mb-0 lg:justify-start lg:items-center lg:mt-0">
                     <img
-                        src="/Logo.png"
+                        src={`${import.meta.env.BASE_URL}Logo.png`}
                         alt="Logo"
                         className="h-20 w-auto object-contain sm:h-24 md:h-28 lg:h-full lg:w-auto lg:object-cover"
                     />
