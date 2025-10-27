@@ -250,7 +250,7 @@ const App = () => {
                     <div
                         className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                         <img
-                            src="/Foto2.jpg"
+                            src={`${import.meta.env.BASE_URL}Foto2.jpg`}
                             alt=""
                             className="w-full max-w-3xl rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228" />
                     </div>
@@ -319,7 +319,7 @@ const App = () => {
                                         {post.category.title}
                                     </p>
                                 </div>
-                                <img src={post.img} alt="" className="py-5 h-70 w-100"/>
+                                <img src={`${import.meta.env.BASE_URL}${post.img}`} alt="" className="py-5 h-70 w-100"/>
                                 <div className="group relative grow">
                                     <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
                                         <a href={post.href}>
@@ -346,7 +346,7 @@ const App = () => {
                                 className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-15 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                                 {language_and_framework.map((item) => (
                                     <img width="158" height="48"
-                                         src={item.src}
+                                         src={`${import.meta.env.BASE_URL}${item.src}`}
                                          alt="Transistor"
                                          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"/>
                                 ))}
@@ -360,7 +360,7 @@ const App = () => {
                                 className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-15 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                                 {database_and_storage.map((item) => (
                                     <img width="158" height="48"
-                                         src={item.src}
+                                         src={`${import.meta.env.BASE_URL}${item.src}`}
                                          alt="Transistor"
                                          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"/>
                                 ))}
@@ -374,7 +374,7 @@ const App = () => {
                                 className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-15 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                                 {tools_and_platform.map((item) => (
                                     <img width="158" height="48"
-                                         src={item.src}
+                                         src={`${import.meta.env.BASE_URL}${item.src}`}
                                          alt="Transistor"
                                          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"/>
                                 ))}
